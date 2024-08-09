@@ -1,0 +1,236 @@
+:root{
+    --primary:indianred;
+    --secondary:rgba(15,10,29,0.849);
+    --light:#2f3640;
+}
+header{
+    width: 100%;
+    height: 10vh;
+}
+.nav1{
+    width: 100%;
+    height: 80%;
+    display:flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+}
+.nav1 .left
+{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+.nav1 .left a{
+    text-decoration:none;
+    color: var(--primary);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.right i
+{
+ font-size: 20px;
+ margin: 15px;
+ color: rgb(229, 140, 140);
+ padding: 8px;
+ cursor:pointer;
+ transition: 0.4s ease-in-out;
+}
+.nav1 .right i:hover
+{
+    transform: rotate(360deg);
+}
+.nav2
+{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.nav2.nav2-left,.nav2.nav-centre,.nav2.nav2-right
+{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.nav2 .nav2-left i
+{
+    margin: left 10px;px;
+}
+.nav2 .nav2.nav-centre h3
+{
+color: var(--primary);
+font-size: 2rem;
+letter-spacing: 5px
+font-wight:bold;
+}
+.nav3{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav3 ul{
+    list-style: none;
+text-align: centre;
+}
+.nav3 ul li{
+    display: inline-block;
+    width: 150px;
+}
+.nav3 ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500px;
+    font-display: block;
+}
+.nav3 ul li i{
+    color: var(--primary);
+    margin: 0px 5px;
+}
+.latest{
+    padding: 50px 100px;
+
+}
+.product-intro{
+    text-align: center;
+}
+.product-intro h1{
+    color: var(--primary);
+    letter-spacing:0.2rem;
+    font-size:2rem;
+    font-weight: bolder;
+
+}
+.product-intro h1 span{
+    color: var(--secondary);
+
+}
+.product-intro p{
+    color: green;
+    margin: 15px 0;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 7rem 0;
+    
+}
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+     
+}
+.card img
+{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.card i
+{
+    color: goldenrod;
+    margin: 10px 0;
+}
+.card button{
+    color: white;
+    background: var(--secondary);
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+.card:hover img, .card:hover h5
+{
+    width: 80%;
+    color:var(--primary);
+
+}
+.card::before{
+    content: '5% off';
+    width:25%;
+    height:25px;
+    line-height:25px;
+   color: white;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: var(--primary);
+    padding:0px 4px;
+    trasnform: rotate(-20deg)
+}
+.trends
+{
+    padding: 50px 100px;
+    background-color:rgba(0,0,0,0.01) ;
+
+}
+ .trends.swiper {
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .trends.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  footer
+  {
+    background-color: var(--secondary);
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: centre;
+    padding: 2rem;
+
+  }
+  footer div{
+    flex-basis: 30%;
+    
+
+}
+footer h1{
+    letter-spacing: 0.5ren;
+}
+footer h1 span{
+    color: var(--primary)
+
+}
+footer p{
+    font-size: 1rem;
+
+}
+footer i{
+    margin: 0px 5px;
+}
+@media only screen and (max-width:769p)
+{
+    .nav1{
+        width: 100%;
+        height: 80%;
+        display:flex;
+        justify-content: space-around;
+        align-items:baseline;
+        flex-wrap: wrap;
+        box-shadow: 2px 0px 3px grey;
+        position: relative;
+        z-index: 2;
+        background-color: white;
+    }
+
+}
